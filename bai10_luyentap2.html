@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- -bai 1:-->
+<!--<script>-->
+<!--    let result = 1;-->
+<!--    let n = +prompt("nhap n la so giai thua ban muon tinh");-->
+<!--    for (let i = 1; i <= n; i++) {-->
+<!--        result *= i;-->
+<!--    }-->
+<!--    document.write(" giai thua cua so ban vua nhap = " + result);-->
+
+<!--</script>-->
+<!-- - bai 4:-->
+<!--<script>-->
+<!--    for (let i = 1; i <= 5; i++) {-->
+<!--        let row = "";-->
+<!--        for (let k = 5; k >= i; k&#45;&#45;) {-->
+<!--            row += '* ';-->
+<!--        }-->
+<!--        document.write(row + "<br>");-->
+<!--    }</script>-->
+<!--<script>-->
+<!--    for (let i = 1; i <= 1; i++) {-->
+<!--        let row = "";-->
+<!--         for (let k = 1; k <= 5; k++) {-->
+<!--            row += '* ';-->
+<!--            document.write(row + "<br>");-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+<!-- -bai 5: tính lãi ngân hàng-->
+<!--<label> moi ban nhap so tien gui vao</label>-->
+<!--<input type="number" id = "money">-->
+<!--<label>lãi xuất hàng tháng</label>-->
+<!--<input type="number" id = "lai_xuat">-->
+<!--<label>thời gian gửi tiết kiệm(tháng)</label>-->
+<!--<input type="number" id = "month">-->
+<!--<button onclick="tinh_tien()">kiểm tra</button>-->
+<!--<script>-->
+<!--    function tinh_tien(){-->
+<!--    let money = +document.getElementById("money").value;-->
+<!--    let month = +document.getElementById("month").value;-->
+<!--    let lai_xuat = +document.getElementById("lai_xuat").value;-->
+<!--    for (let i = 1; i <= month; i++) {-->
+<!--        // Tính lãi cho năm hiện tại-->
+<!--        let tien_lai = money * lai_xuat;-->
+<!--        // Cộng dồn lãi vào số tiền gốc-->
+<!--        money += tien_lai;-->
+<!--    }-->
+<!--    // money += money;-->
+<!--    document.write(money);-->
+<!--    }-->
+<!--</script>-->
+bai 4: vẽ hình chữ nhật
+<label> nhập chiều dài của hình chữ nhật</label>
+<input type="number" id ="chieu_dai">
+<label>nhập chiều rộng của hình chữ nhật</label>
+<input type="number" id="chieu_rong">
+<button onclick="hinh_chu_nhat()">Click</button>
+<script>
+    function hinh_chu_nhat() {
+        let chieu_dai = document.getElementById("chieu_dai").value;
+        let chieu_rong = document.getElementById("chieu_rong").value;
+        for (let i = 0; i < chieu_rong; i++) {
+            if (i !== 0 && i !== 6) {
+                document.write("*" + "</pre>" + "*" + "<br>");
+            } else {
+                for (let j = 0; j < chieu_dai; j++) {
+                    let a = "*";
+                    document.write(a);
+                }
+            }
+        }
+    }
+</script>
+</body>
+</html>
